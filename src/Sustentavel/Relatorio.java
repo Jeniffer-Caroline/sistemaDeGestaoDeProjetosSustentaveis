@@ -1,4 +1,4 @@
-package Sustenta;
+package Sustentavel;
 
 public class Relatorio {
 }
