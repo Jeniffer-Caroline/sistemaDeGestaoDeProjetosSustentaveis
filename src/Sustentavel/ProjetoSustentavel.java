@@ -11,7 +11,7 @@ public class ProjetoSustentavel {
     private relatorioImpacto RelatorioImpacto;
     private relatorioImpacto relatorioImpacto;
 
-    public ProjetoSustentavel(String nome, String descricao) {
+    public ProjetoSustentavel(String nome) {
         this.nome = nome;
         this.descricao = descricao;
         this.voluntarios = new ArrayList<>();

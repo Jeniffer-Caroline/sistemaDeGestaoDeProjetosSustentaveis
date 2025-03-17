@@ -24,6 +24,7 @@ public void setListarProjetos(){
         }
     }
 
+
          public String getNome() {
              return nome;
          }

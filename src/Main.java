@@ -1,7 +1,7 @@
-import Sustenta.Organizacao;
-import Sustenta.ProjetoSustentavel;
-import Sustenta.Voluntario;
-import Sustenta.relatorioImpacto;
+import Sustentavel.Organizacao;
+import Sustentavel.ProjetoSustentavel;
+import Sustentavel.Voluntario;
+import Sustentavel.relatorioImpacto;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,8 +10,11 @@ public class Main {
 
         //Criar projetos sustentáveis
 
-        ProjetoSustentavel projeto1 = new ProjetoSustentavel("Reflorestamento", "Plantar árvores em áreas degradadas");
-        ProjetoSustentavel projeto2 = new ProjetoSustentavel("Reciclagem", "Reciclar materiais em áreas urbanas");
+        ProjetoSustentavel projeto1 = new ProjetoSustentavel("Reflorestamento");
+        projeto1.setDescricao("Plantar árvores em áreas degradadas");
+
+        ProjetoSustentavel projeto2 = new ProjetoSustentavel("Reciclagem");
+        projeto2.setDescricao("Reciclar materiais em áreas urbanas");
 
         //Criar voluntáarios
         Voluntario voluntario1 = new Voluntario("Kátia", "Katia123@gmail.com" );
