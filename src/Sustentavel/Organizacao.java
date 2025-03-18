@@ -1,29 +1,29 @@
 package Sustentavel;
 
 import java.util.ArrayList;
+
 import java.util.List;
      //Atributos
-public class Organizacao {
+public abstract class Organizacao {
+
     private String nome;
+
     private List<ProjetoSustentavel> listaProjetos;
 
     public Organizacao(String nome){
+        this.nome = nome;
+        this.listaProjetos = new ArrayList<>();
+    }
+    public void adicionaProjeto(ProjetoSustentavel projeto) {
+        this.listaProjetos.add(projeto);
 
-             this.nome = nome;
-             this.listaProjetos = new ArrayList<>();
-         }
+    }
 
-         //Métodos
-public void adicionaProjeto(ProjetoSustentavel projeto) {
-    this.listaProjetos.add(projeto);
-}
-
-public void setListarProjetos(){
+    public void listarProjetos(){
         for (ProjetoSustentavel projeto : listaProjetos){
             System.out.println(projeto.getNome());
         }
     }
-
 
          public String getNome() {
              return nome;
@@ -40,4 +40,5 @@ public void setListarProjetos(){
          public void setListaProjetos(List<ProjetoSustentavel> listaProjetos) {
              this.listaProjetos = listaProjetos;
          }
+         public abstract double calcularImpacto();
      }

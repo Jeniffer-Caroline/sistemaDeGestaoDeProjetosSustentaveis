@@ -1,9 +1,11 @@
 package Sustentavel;
 
+import Interface.ImpactoAmbiental;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProjetoSustentavel {
+public abstract class ProjetoSustentavel implements ImpactoAmbiental {
     //Atributos
     private String nome;
     private String descricao;
@@ -59,4 +61,6 @@ public class ProjetoSustentavel {
     public void setRelatorioImpacto(relatorioImpacto relatorioImpacto) {
         this.relatorioImpacto = relatorioImpacto;
     }
+
+    public abstract int calcularImpacto();
 }

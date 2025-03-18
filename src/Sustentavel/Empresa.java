@@ -1,6 +1,12 @@
 package Sustentavel;
 
 public class Empresa extends Organizacao{
+
+    public double calcularImpacto(){
+
+
+        return this.faturamentoAnual * 0.1;
+    }
     private String cnpj;
 
     public Empresa(String nome, String cnpj) {
