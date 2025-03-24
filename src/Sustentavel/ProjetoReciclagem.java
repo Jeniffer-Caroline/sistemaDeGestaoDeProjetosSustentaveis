@@ -1,18 +1,23 @@
 package Sustentavel;
 
-public class ProjetoReciclagem extends ProjetoSustentavel{
+public class ProjetoReciclagem extends ProjetoSustentavel {
     private double toneladasRecicladas;
 
-    public ProjetoReciclagem(String nome, double toneladasRecicladas) {
+    public ProjetoReciclagem(String nome) {
         super(nome);
-        this.toneladasRecicladas = toneladasRecicladas;
     }
 
-    public double getToneladasRecicladas(){
+    public double getToneladasRecicladas() {
         return toneladasRecicladas;
     }
 
     public void setToneladasRecicladas(double toneladasRecicladas) {
         this.toneladasRecicladas = toneladasRecicladas;
+    }
+
+    @Override
+    public double calcularImpacto() {
+        System.out.println("Impacto: " + toneladasRecicladas + " toneladas recicladas.");
+        return 0;
     }
 }

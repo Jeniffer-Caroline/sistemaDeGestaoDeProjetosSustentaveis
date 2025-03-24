@@ -1,7 +1,6 @@
 package Sustentavel;
 
 public class Voluntario {
-    //Atributos
     private String nome;
     private String email;
 
@@ -9,11 +8,6 @@ public class Voluntario {
         this.nome = nome;
         this.email = email;
     }
-
-    //Métodos
-    public void participarProjeto(ProjetoSustentavel projeto){
-projeto.adicionarVoluntario(this);
-}
 
     public String getNome() {
         return nome;
@@ -29,5 +23,8 @@ projeto.adicionarVoluntario(this);
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void participarProjeto(ProjetoSustentavel projeto1) {
     }
 }
